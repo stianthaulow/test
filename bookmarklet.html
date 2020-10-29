@@ -1,0 +1,25 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmarklet</title>
+    <style>
+      a {
+        display: inline-block;
+        padding: 1px 6px;
+        height: 18px;
+        color: #fff;
+        background: #32a0eb;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Trekk denne til bokmerkeraden og klikk på den fra søknadsiden</p>
+    <a
+      class="bookmarklet"
+      href="javascript:(function()%7B(()%3D%3E%7Bconst%20t%3Ddocument.getElementById(%22item__0%22)%3BObject.getOwnPropertyDescriptor(window.HTMLInputElement.prototype%2C%22value%22).set.call(t%2C%22test%22)%2Ct.dispatchEvent(new%20Event(%22input%22%2C%7Bbubbles%3A!0%7D))%7D)()%7D)()"
+      >Legg verdi i honeypot-feltet</a
+    >
+  </body>
+</html>
